@@ -8,12 +8,39 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <title>Crystal Game</title>
+    <!--link Javascript & jQuery here-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <title>Rupee Game</title>
 </head>
 <body>
+    <header>Rupee Collector!</header>
 
+    <p>You will be given a random number of rupees at the start of the game.
+        <br><br>
+        There are four rupee types below. By clicking on a rupee type, you will add a specific amount of rupees to your total score.
+        <br><br>
+        You win the game by matching your total number of rupees to the random number of rupees. You lose the game if your total score goes above the random number.
+        <br><br>
+        The value of each rupee type is hidden from you until you click on it.
+        <br><br>
+        Each time the game starts, the value of each rupee type will change.
+    </p>
 
-    <!--link to javascript file-->
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <div class="rupee-div" id="rupee1"><img class="rupee" src="assets/images/red-rupee.png"></div>
+    <div class="rupee-div" id="rupee2"><img class="rupee" src="assets/images/yellow-rupee.png"></div>
+    <div class="rupee-div" id="rupee3"><img class="rupee" src="assets/images/green-rupee.png"></div>
+    <div class="rupee-div" id="rupee4"><img class="rupee" src="assets/images/blue-rupee.png"></div>
+
+    <div class="objective">
+        Number of Rupees to Match
+        <div id="goal-num"></div>
+    </div>
+    <div class="score-tracker">
+        Wins: <span id="wins">0</span>
+        <br>
+        Losses: <span id="losses">0</span>
+    </div>
 </body>
 </html>
