@@ -19,12 +19,18 @@ $(".rupee-div").click(function () {
         winCount++;
         console.log("wins: " + winCount);
         $("#wins").text(winCount);
+
+        alert("You won!");
+        
         newGame();
     }
     else if (playerScore>goalScore) {
         lossCount++;
         console.log("losses: " + lossCount);
         $("#losses").text(lossCount);
+        
+        alert("You lost...");
+        
         newGame();
     };
     
