@@ -12,6 +12,7 @@ $(".rupee-div").click(function () {
 
     // increment playerScore by the rupee value chosen
     playerScore += parseInt($(this).attr("value"));
+    $("#your-score").text(playerScore);
     console.log("player's score: " + playerScore);
 
     if (goalScore===playerScore) {
@@ -28,7 +29,6 @@ $(".rupee-div").click(function () {
     };
     
 });
-
 
 
 function newGame() {
@@ -52,6 +52,9 @@ function newGame() {
 
     // show goalScore on html page
     $("#goal-num").text(goalScore);
+    
+    // reset player score to zero on html page
+    $("#your-score").text("0");
 }
 
 });

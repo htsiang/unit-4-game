@@ -28,19 +28,26 @@
         Each time the game starts, the value of each rupee type will change.
     </p>
 
-    <div class="rupee-div" id="rupee1"><img class="rupee" src="assets/images/red-rupee.png"></div>
-    <div class="rupee-div" id="rupee2"><img class="rupee" src="assets/images/yellow-rupee.png"></div>
-    <div class="rupee-div" id="rupee3"><img class="rupee" src="assets/images/green-rupee.png"></div>
-    <div class="rupee-div" id="rupee4"><img class="rupee" src="assets/images/blue-rupee.png"></div>
+    <div class="container">
+        <div class="objective">
+            Number of Rupees to Collect:
+            <div id="goal-num"></div>
+        </div>
+        <div class="score-tracker">
+            Wins: <span id="wins">0</span>
+            <br><br>
+            Losses: <span id="losses">0</span>
+        </div>
+    </div>
 
-    <div class="objective">
-        Number of Rupees to Match
-        <div id="goal-num"></div>
+    <div class="clearfix">
+        <div class="rupee-div" id="rupee1"><img class="rupee" src="assets/images/red-rupee.png"></div>
+        <div class="rupee-div" id="rupee2"><img class="rupee" src="assets/images/yellow-rupee.png"></div>
+        <div class="rupee-div" id="rupee3"><img class="rupee" src="assets/images/green-rupee.png"></div>
+        <div class="rupee-div" id="rupee4"><img class="rupee" src="assets/images/blue-rupee.png"></div>
     </div>
-    <div class="score-tracker">
-        Wins: <span id="wins">0</span>
-        <br>
-        Losses: <span id="losses">0</span>
-    </div>
+
+    <div id="total-rupees">Your total number of rupees is:</div>
+    <div id="your-score">0</div>
 </body>
 </html>
